@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Etch-a-Sketch</title>
+</head>
+<body>
+  <div id="toy-container">
+    <h1 id="title">Etch-a-Sketch</h1>
+    
+    <div id="interfaz">
+      <div id="size">
+        <label for="gridSize">Grid Size (1-100):</label>
+        <input type="range" id="gridSize" min="1" max="100" value="16">
+        <span id="gridSizeValue">16</span>
+        <button onclick="updateGrid()">Update Grid</butto>
+        </div>
+    
+      <div id="change-color">
+        <label for="colorPicker">Change Color:</label>
+        <input type="color" id="colorPicker">
+      </div>
+      </div>
+
+      <div id="grid-container">
+        <div id="grid"></div>
+        </div>
+    </div>
+</body>
+</html>
